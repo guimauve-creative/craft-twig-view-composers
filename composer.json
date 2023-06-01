@@ -1,0 +1,32 @@
+{
+    "name": "guimauve/craft-twig-view-composers",
+    "description": "Allow composable PHP classes to be called before page view rendering, hence allowing organizing code à-la Laravel View Composers.",
+    "type": "craft-plugin",
+    "require": {
+        "php": ">=8.0.2",
+        "craftcms/cms": "^4.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "guimauve\\crafttwigviewcomposers\\": "src/"
+        }
+    },
+    "extra": {
+        "handle": "_twig-view-composers",
+        "name": "Twig View Composers",
+        "developer": "Guimauve",
+        "documentationUrl": "",
+        "class": "guimauve\\crafttwigviewcomposers\\TwigViewComposers"
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "8.0.2"
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
+        }
+    }
+}
+
